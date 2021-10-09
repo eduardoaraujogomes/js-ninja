@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge 21</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+
+            section {
+                display: flex;
+                width: 50rem;
+                padding: 10rem;
+                background-color: rgb(44, 43, 43);
+                border-radius: 0.8rem;
+                flex-direction: column;
+                justify-content: space-around;
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                gap: 10rem;
+            }
+
+            input {
+                border: none;
+                font-size: 10rem;
+                text-align: center;
+                font-weight: bolder;
+                outline: none;
+                cursor: default;
+                background: transparent;
+                color: white;
+
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+            }
+
+            button {
+                padding: 1.4rem 3.5rem;
+                font-size: 1.5rem;
+                border: none;
+                border-radius: 0.8rem;
+                transform: scale(0.9);
+                transition: transform 0.4s ease-in-out;
+                cursor: pointer;
+                font-weight: bold;
+
+            }
+
+            button:nth-child(1) {
+                background-color: lightgreen;
+            }
+
+            button:nth-child(2) {
+                background-color: lightsalmon;
+            }
+
+            button:nth-child(3) {
+                background-color: lightyellow;
+            }
+
+            button:hover {
+                transform: scale(1)
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <input data-js="timer" type="text" value='0' />
+            <div id='buttons'>
+                <button data-js='start'>Start</button>
+                <button data-js='stop'>Stop</button>
+                <button data-js='reset'>Reset</button>
+            </div>
+        </section>
+
+
+
+        <script src="./challenge-21.js"></script>
+    </body>
+
+</html>
