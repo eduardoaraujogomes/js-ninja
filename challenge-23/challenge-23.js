@@ -29,10 +29,6 @@
   let $buttonCE = doc.querySelector('[data-js="clear"]');
   let $buttonEqual = doc.querySelector('[data-js="equal"]');
 
-  function sum() {
-    return;
-  }
-
   $buttonsNumbers.forEach(function ($button) {
     $button.addEventListener('click', handleClickNumber, false);
   });
